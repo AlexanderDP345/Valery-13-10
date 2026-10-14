@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para Valery 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffe3ee;--bg2:#e9d8ff;--card:rgba(255,255,255,.75);--ink:#5a2a47;--soft:#9b5c82;--pink:#ff5c93;--accent:#b36bff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1030;--bg2:#1a1240;--card:rgba(255,255,255,.1);--ink:#ffe6f1;--soft:#e7b6d3;--pink:#ff7fab;--accent:#c79bff}}
+:root[data-theme="dark"]{--bg1:#2a1030;--bg2:#1a1240;--card:rgba(255,255,255,.1);--ink:#ffe6f1;--soft:#e7b6d3;--pink:#ff7fab;--accent:#c79bff}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Quicksand',system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;min-height:100vh;overflow-x:hidden}
+.script{font-family:'Dancing Script','Brush Script MT',cursive}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.f{position:absolute;bottom:-40px;animation:up linear forwards;opacity:.85}
+@keyframes up{to{transform:translate(var(--dx),-110vh) rotate(360deg);opacity:0}}
+main{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:28px 18px 80px;text-align:center}
+.hero{padding:50px 0 20px}
+.hero small{letter-spacing:.3em;text-transform:uppercase;color:var(--soft);font-size:.75rem}
+.hero h1{font-size:clamp(3.4rem,17vw,6rem);margin:6px 0;line-height:1;background:linear-gradient(90deg,var(--pink),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent;animation:beat 2.4s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.05)}}
+.hero p{color:var(--soft);font-size:1.1rem;margin:0}
+.heart{font-size:3rem;display:inline-block;animation:beat 1.4s infinite;filter:drop-shadow(0 6px 10px rgba(255,92,147,.5))}
+button{font:inherit;cursor:pointer;border:0}
+.btn{background:linear-gradient(90deg,var(--pink),var(--accent));color:#fff;padding:13px 26px;border-radius:99px;font-weight:600;font-size:1rem;box-shadow:0 8px 22px rgba(255,92,147,.4);transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.env{margin:34px auto 10px;width:230px;height:150px;position:relative;cursor:pointer;background:linear-gradient(var(--pink),#ff8fb3);border-radius:10px;box-shadow:0 14px 30px rgba(255,92,147,.4);transition:transform .3s}
+.env:hover{transform:translateY(-4px) rotate(-1deg)}
+.env::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent 49%,rgba(255,255,255,.25) 50%) left/50% 100% no-repeat,linear-gradient(to bottom left,transparent 49%,rgba(255,255,255,.25) 50%) right/50% 100% no-repeat;border-radius:10px}
+.env .seal{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font-size:2.2rem;animation:beat 1.4s infinite}
+.hint{color:var(--soft);font-size:.9rem;margin-top:6px}
+#stage{position:relative;height:210px;margin-top:26px}
+.env{position:absolute;left:0;top:0;margin:0;width:96px;height:66px;opacity:.45;box-shadow:0 6px 14px rgba(255,92,147,.3);transition:opacity .5s}
+.env:hover{transform:none;opacity:.9}
+.env .seal{font-size:1.5rem}
+.env.peek{opacity:.95}
+.env.wig{animation:wig .5s}
+@keyframes wig{0%,100%{margin-left:0}20%{margin-left:-5px}40%{margin-left:5px}60%{margin-left:-4px}80%{margin-left:4px}}
+.env.pop{animation:envpop .7s forwards;pointer-events:none}
+@keyframes envpop{35%{transform:scale(1.5) rotate(-10deg);opacity:1}100%{transform:scale(0) rotate(30deg);opacity:0}}
+#letter{display:none;margin-top:26px}
+.paper{background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.5);border-radius:24px;padding:30px 24px;text-align:left;box-shadow:0 14px 40px rgba(179,107,255,.25);animation:pop .8s ease both}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.95)}}
+.paper h2{font-size:2.2rem;margin:0 0 12px;text-align:center;color:var(--pink)}
+.paper p{line-height:1.8;margin:0 0 14px;font-size:1.05rem}
+.sign{text-align:right;font-size:1.7rem;color:var(--accent)}
+h3.t{font-size:2rem;margin:46px 0 14px;color:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card{background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.5);border-radius:18px;padding:18px 12px;cursor:pointer;transition:transform .25s;min-height:96px;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.card:hover{transform:translateY(-4px) rotate(-1deg)}
+.card .e{font-size:1.8rem}
+.card .x{font-size:.92rem;color:var(--soft);display:none}
+.card.open .x{display:block}
+.card.open .e{font-size:1.2rem}
+#arena{position:relative;height:440px;border-radius:24px;background:var(--card);border:2px dashed var(--pink);overflow:hidden;touch-action:manipulation}
+.orb{position:absolute;left:0;top:0;width:96px;height:96px;border-radius:22px;background:rgba(255,255,255,.92);color:#5a2a47;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:1.9rem;cursor:pointer;box-shadow:0 8px 20px rgba(179,107,255,.35);border:2px solid var(--pink);will-change:transform;user-select:none;-webkit-user-select:none}
+.orb b{font-size:.7rem;margin-top:2px;text-align:center;line-height:1.1;padding:0 4px}
+.orb.read{opacity:.5}
+.orb.read::after{content:"✓";position:absolute;top:3px;right:8px;font-size:.9rem;color:var(--pink)}
+.orb.gold{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle,#fff7a0,#ffd400 60%,#ffb300);border-color:#fff;font-size:1.8rem;animation:glow .5s infinite alternate;z-index:3}
+@keyframes glow{from{box-shadow:0 0 16px 5px #ffe600,0 0 36px 12px rgba(255,220,0,.55)}to{box-shadow:0 0 26px 10px #fff200,0 0 60px 24px rgba(255,220,0,.85)}}
+#prog{margin:4px 0 12px;color:var(--soft);font-size:.95rem}
+#modal{position:fixed;inset:0;z-index:20;background:rgba(40,10,40,.55);display:none;align-items:center;justify-content:center;padding:20px}
+#modal.show{display:flex}
+.mbox{background:#fff;color:#5a2a47;max-width:340px;width:100%;border-radius:26px;padding:28px 22px;text-align:center;animation:pop .4s both}
+.mbox .em{font-size:3rem}
+.mbox h4{font-size:2rem;margin:4px 0 8px;color:#ff5c93}
+.mbox p{margin:0 0 16px;line-height:1.6}
+.mbox.goldbox{background:linear-gradient(#fffbe0,#fff3a0);box-shadow:0 0 40px 10px #ffe600}
+.row{display:flex;gap:14px;justify-content:center;align-items:center;min-height:56px;flex-wrap:wrap}
+.ghost{background:#eee;color:#555;padding:13px 22px;border-radius:99px;font-weight:600;position:relative}
+#ga{position:relative;height:280px;border-radius:18px;background:rgba(255,255,255,.65);overflow:hidden;touch-action:manipulation}
+.gh{position:absolute;top:-44px;font-size:2.1rem;cursor:pointer;user-select:none;-webkit-user-select:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(340px)}}
+.big{margin-top:40px}
+#mus{position:fixed;right:14px;top:calc(14px + env(safe-area-inset-top,0px));z-index:5;width:48px;height:48px;border-radius:50%;background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:1.4rem;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+#mus.on{animation:beat 1s infinite}
+footer{margin-top:40px;color:var(--soft);font-size:.9rem}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+<audio id="song" loop></audio>
+<button id="mus" title="Música" aria-label="Música" style="display:none">🎵</button>
+<main>
+  <section class="hero">
+    <small>FELIZ ANIVERSARIO</small>
+    <h1 class="script">Valery</h1>
+    <p>✨ TE AMOOOOOOOO ✨</p>
+    <div style="margin-top:22px"><span class="heart">💖</span></div>
+    <div id="stage"><div class="env" id="env" role="button" aria-label="Abrir carta"><span class="seal">💌</span></div></div>
+    
+  </section>
+
+  <section id="letter">
+    <div class="paper">
+      <h2 class="script">Mi amor, mi Valery</h2>
+
+<p>Hice esta pequeña página porque hay algo que llevo tiempo queriendo decirte, y quise que quedara guardado en un lugar al que siempre puedas volver.</p>
+
+<p>Sé que lees cartas mías y que siempre demuestro cuánto te amo, pero en esta ocasión quiero recordarte que te pediré que seas mi pareja, para siempre.</p>
+
+<p>De las tantas sorpresas que tengo pensadas para ti, decidí dártela de esta forma: una que ya viste, un formato que ya se te hará conocido, de presentaciones anteriores.</p>
+
+<p><strong>Pero la pregunta será más adelante.</strong> 💌</p>
+
+  <div class="sign script">Con todo mi amor, tu noviecito</div>
+ </div>
+
+    <h3 class="t script">Cosas que amo de ti 💕</h3>
+    <p class="hint">atrapa los cuadritos TOCANDOLOS... cuando termines pasará algo especial chichichi</p>
+    <div id="prog"></div>
+    <div id="arena"></div>
+    <div id="modal"><div class="mbox" id="mbox"></div></div>
+
+    <div class="big">
+      <p class="hint">cuánto te quiero? pegale al boton </p>
+      <button class="btn" id="love">PEGAME, pero con cariño</button>
+    </div>
+    <footer class="script" style="font-size:1.5rem">✨ Te hice esto con mucho amor bb ✨</footer>
+  </section>
+</main>
+
+<script>
+(function(){
+  var fx=document.getElementById('fx'),em=['💖','🌸','✨','💗','🌷','💕','⭐'];
+  function spawn(e,x,big){
+    var s=document.createElement('span');s.className='f';s.textContent=e||em[Math.floor(Math.random()*em.length)];
+    s.style.left=(x!=null?x:Math.random()*100)+'vw';
+    s.style.fontSize=(big?18+Math.random()*30:12+Math.random()*20)+'px';
+    s.style.setProperty('--dx',(Math.random()*120-60)+'px');
+    s.style.animationDuration=(big?3+Math.random()*3:7+Math.random()*7)+'s';
+    fx.appendChild(s);setTimeout(function(){s.remove()},14000);
+  }
+  setInterval(function(){spawn()},550);
+  for(var i=0;i<10;i++)setTimeout(spawn,i*200);
+
+  var open=false,env=document.getElementById('env'),stage=document.getElementById('stage');
+  var E={x:30,y:70,tx:30,ty:70,next:0};
+  function pickT(now){E.tx=Math.random()*(stage.clientWidth-100);E.ty=Math.random()*(stage.clientHeight-70);E.next=now+2500+Math.random()*3500}
+  function life(){
+    var c=env.classList;c.add('wig');setTimeout(function(){c.remove('wig')},550);
+    if(Math.random()<.6){c.add('peek');setTimeout(function(){c.remove('peek')},1400)}
+    if(!open)setTimeout(life,3000+Math.random()*4000);
+  }
+  setTimeout(life,2500);
+  (function drift(now){
+    if(open)return;
+    if(now>E.next)pickT(now);
+    E.x+=(E.tx-E.x)*.012;E.y+=(E.ty-E.y)*.012;
+    env.style.transform='translate('+E.x+'px,'+(E.y+Math.sin(now/450)*5)+'px) rotate('+Math.sin(now/800)*7+'deg)';
+    requestAnimationFrame(drift);
+  })(performance.now());
+  env.onclick=function(){
+    if(open)return;open=true;
+    env.classList.add('pop');
+    for(var i=0;i<25;i++)setTimeout(function(){spawn(null,Math.random()*100,true)},i*60);
+    setTimeout(function(){
+      env.style.display='none';
+      var l=document.getElementById('letter');l.style.display='block';
+      build();l.scrollIntoView({behavior:'smooth'});
+    },700);
+    playSong();
+  };
+
+  var song=document.getElementById('song'),btn=document.getElementById('mus');
+  var SONG='Stephen Sanchez - Until I Found You Piano Cover by Pianella Piano.mp3'; /* aquí va el link o archivo de tu canción */
+  if(SONG){song.src=SONG;btn.style.display='block'}
+  function playSong(){if(SONG){song.play().then(function(){btn.classList.add('on')}).catch(function(){})}}
+  btn.onclick=function(){if(song.paused){song.play();btn.classList.add('on')}else{song.pause();btn.classList.remove('on')}};
+
+  var reasons=[['😊','Tu personalidad','AMO que seas tan expresiva, carismatica y libre, practicamente eres tu y es algo que admiro siempre, porque a mi me cuesta, pero es genial que mi novia sea asi conmigo y sienta esa confianza tmbn de ser yo mismo, auqnue poquito, pero se que mejorara :3'],
+  ['🤗','Tus abrazos', 'Recuerdo cuando te dije que odio los abrazos y aun asi el mismo dia que te conoci quise abrazarte como tu y desde ese dia, empeze a sentir frio porque extraño el calor de tus brazos'],
+  ['😂','Tu risa','Me encanta cuando ries, aunque te palteas a veces me gusta recordarte lo tanto que amo tu risa y escucharla me hace feliz tmbn'],
+  ['🌙','Cómo me cuidas','Tus detalles, tu paciencia, tu ternura... Siempre me siento en paz cuando estoy contigo y mis dias se vuelven mejores con tu presencia'],
+  ['✨','Tu cuerpo','Me encanta, que mas puedo decir, amo todo tu cuerpo en serio, me vuelvo loco cada que lo miro y para mi es mas que perfecto, lo que tu llamas inseguridades, eso es lo mas hermoso del mundo bb'],
+  ['💞','Tu corazón','Es enorme y tan bonito. me da penita cuando me cuentas de como te trataron antes, pero llegue aqui para cuidarlo y que no vuelva a estar triste jamas']];
+  var arena=document.getElementById('arena'),prog=document.getElementById('prog'),modal=document.getElementById('modal'),mbox=document.getElementById('mbox');
+  var items=[],read=0,paused=false,started=false;
+  var goldMade=false;
+  function addGold(){var g=mk('gold','⭐',3,ask);g.gold=true;g.hue=50;g.mode='alert';g.next=performance.now()+2500;g.el.style.animation='none'}
+  function upd(){
+    if(read>=reasons.length){
+      prog.textContent='¡Leíste todo! Mira, apareció algo brillante... atrápalo ✨';
+      if(!goldMade){goldMade=true;addGold()}
+    }else prog.textContent='Leídos: '+read+' de '+reasons.length;
+  }
+  function show(html,gold){mbox.className='mbox'+(gold?' goldbox':'');mbox.innerHTML=html;modal.classList.add('show');paused=true}
+  function close(){modal.classList.remove('show');paused=false}
+  modal.onclick=function(e){if(e.target===modal)close()};
+  function mk(cls,html,speed,fn){
+    var el=document.createElement('div');el.className='orb '+cls;el.innerHTML=html;arena.appendChild(el);
+    var an=Math.random()*6.28;
+    var it={el:el,w:el.offsetWidth,h:el.offsetHeight,x:Math.random()*200,y:Math.random()*250,vx:Math.cos(an)*speed,vy:Math.sin(an)*speed};
+    el.onclick=function(){fn(it)};items.push(it);return it;
+  }
+  function ask(){
+    show('<div class="em">⭐</div><h4 class="script">JUEGUITO LOCO P</h4><p>Atrapa 10 corazones 💖 tocándolos. Los corazones rotos malditos quitan puntos, cuidao 💔</p><div id="gc" style="font-weight:700;margin-bottom:8px">0 / 10</div><div id="ga"></div>',true);
+    var ga=document.getElementById('ga'),gc=document.getElementById('gc'),score=0,done=false;
+    var iv=setInterval(function(){
+      if(done||!modal.classList.contains('show')){clearInterval(iv);return}
+      var h=document.createElement('div'),bad=Math.random()<.25;
+      h.className='gh';h.textContent=bad?'💔':'💖';
+      h.style.left=(Math.random()*84)+'%';h.style.animationDuration=(2.2+Math.random()*1.6)+'s';
+      h.addEventListener('animationend',function(){h.remove()});
+      h.addEventListener('pointerdown',function(){
+        if(done)return;
+        score=bad?Math.max(0,score-2):score+1;h.remove();
+        gc.textContent=score+' / 10';
+        if(score>=10){
+          done=true;clearInterval(iv);gc.textContent='¡Lo lograste! 💛';
+          for(var i=0;i<20;i++)setTimeout(function(){spawn('💖',Math.random()*100,true)},i*40);
+          setTimeout(question,1100);
+        }
+      });
+      ga.appendChild(h);
+    },520);
+  }
+  function question(){
+    show('<div class="em">💛</div><h4 class="script">Una pregunta...</h4><p>Valery, ¿me dejas seguir siendo tu novio todos los días de mi vida?</p><div class="row"><button class="btn" id="yes">Sí 💖</button><button class="ghost" id="no">No</button></div>',true);
+    var no=document.getElementById('no');
+    function run(e){if(e&&e.preventDefault)e.preventDefault();no.style.left=(Math.random()*150-75)+'px';no.style.top=(Math.random()*60-30)+'px'}
+    no.onmouseenter=run;no.ontouchstart=run;no.onclick=run;
+    document.getElementById('yes').onclick=function(){
+      mbox.innerHTML='<div class="em">🥰</div><h4 class="script">¡Sabía que dirías que sí!</h4><p>Igual no puedes marcar que no muejejeje, te amooo bebeeeeee, eres lo mejor que me paso</p><button class="btn" id="cl">Cerrar</button>';
+      document.getElementById('cl').onclick=close;
+      for(var i=0;i<50;i++)setTimeout(function(){spawn(['💛','💖','✨','💗'][Math.floor(Math.random()*4)],Math.random()*100,true)},i*40);
+    };
+  }
+  function build(){
+    if(started)return;started=true;
+    reasons.forEach(function(r){
+      mk('', '<span>'+r[0]+'</span><b>'+r[1]+'</b>',1.1,function(it){
+        if(!it.el.classList.contains('read')){it.el.classList.add('read');read++;upd()}
+        show('<div class="em">'+r[0]+'</div><h4 class="script">'+r[1]+'</h4><p>'+r[2]+'</p><button class="btn" id="cl">Qué lindo 💕</button>');
+        document.getElementById('cl').onclick=close;
+      });
+    });
+    upd();
+    var ptr=null;
+    function setP(e){var r=arena.getBoundingClientRect();ptr={x:e.clientX-r.left,y:e.clientY-r.top}}
+    arena.addEventListener('pointermove',setP);arena.addEventListener('pointerdown',setP);
+    arena.addEventListener('pointerleave',function(){ptr=null});
+    arena.addEventListener('pointerup',function(e){if(e.pointerType==='touch')ptr=null});
+    var last=0;
+    (function loop(t){
+      var dt=Math.min((t-last)/16.7||1,3);last=t;
+      if(!paused){
+        var W=arena.clientWidth,H=arena.clientHeight;
+        items.forEach(function(o){
+          if(o.gold){
+            o.hue=(o.hue+3*dt)%360;
+            var c='hsl('+o.hue+',100%,60%)';
+            o.el.style.background='radial-gradient(circle,#fff,'+c+' 65%)';
+            o.el.style.boxShadow='0 0 18px 6px '+c+',0 0 40px 14px '+c.replace('hsl','hsla').replace(')',',.5)');
+            if(t>o.next){
+              o.mode=o.mode==='alert'?'peek':'alert';o.next=t+(o.mode==='alert'?2600:1400);
+              if(o.mode==='alert'){var an=Math.random()*6.28;o.vx=Math.cos(an)*3;o.vy=Math.sin(an)*3}
+            }
+            if(o.mode==='peek'){o.vx*=.88;o.vy*=.88;o.el.style.opacity=1}
+            else{
+              o.el.style.opacity=.5+.2*Math.sin(t/110);
+              if(ptr){
+                var dx=o.x+o.w/2-ptr.x,dy=o.y+o.h/2-ptr.y,d=Math.hypot(dx,dy)||1;
+                if(d<110){o.vx=dx/d*5.4;o.vy=dy/d*5.4}
+              }
+              var m=Math.hypot(o.vx,o.vy)||1;
+              if(m<2.8){o.vx*=2.8/m;o.vy*=2.8/m}
+              if(m>5.6){o.vx*=5.6/m;o.vy*=5.6/m}
+            }
+          }
+          o.x+=o.vx*dt;o.y+=o.vy*dt;
+          if(o.x<0){o.x=0;o.vx=Math.abs(o.vx)}
+          if(o.x>W-o.w){o.x=W-o.w;o.vx=-Math.abs(o.vx)}
+          if(o.y<0){o.y=0;o.vy=Math.abs(o.vy)}
+          if(o.y>H-o.h){o.y=H-o.h;o.vy=-Math.abs(o.vy)}
+          o.el.style.transform='translate('+o.x+'px,'+o.y+'px)';
+        });
+      }
+      requestAnimationFrame(loop);
+    })(0);
+  }
+  document.getElementById('love').onclick=function(){
+    for(var i=0;i<40;i++)setTimeout(function(){spawn(['💖','💗','💕','❤️'][Math.floor(Math.random()*4)],Math.random()*100,true)},i*40);
+  };
+})();
+</script>
+</body>
+</html>
